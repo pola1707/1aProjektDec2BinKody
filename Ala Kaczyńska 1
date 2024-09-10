@@ -1,0 +1,12 @@
+def dziesietna_na_binarna(liczba):               
+     if liczba == 0: 
+        return "0" 
+
+    if liczba < 0:
+        return "-" + dziesietna_na_binarna(-liczba)
+    if liczba > 1:
+        return dziesietna_na_binarna(liczba // 2) + str(liczba % 2) 
+    else: 
+        return str(liczba)
+liczba = int(input("Podaj liczbę dziesiętną:"))
+print(f"Liczba binarna: {dziesietna_na_binarna(liczba)}")
