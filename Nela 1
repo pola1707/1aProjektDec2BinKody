@@ -1,1 +1,7 @@
+def dziesietny_na_dwojkowy(liczba):
+    return bin(liczba)[2:]
 
+# Przykład użycia
+liczba_dziesietna = 42
+liczba_dwojkowa = dziesietny_na_dwojkowy(liczba_dziesietna)
+print(f"Liczba dziesiętna {liczba_dziesietna} to {liczba_dwojkowa} w systemie dwójkowym.")
