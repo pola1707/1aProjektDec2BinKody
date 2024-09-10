@@ -1,0 +1,9 @@
+def dziesietny_na_binarny(liczba):
+    if liczba >=0:
+        return bin(liczba)[2:]
+    else:
+        return '-' + bin(liczba)[3:]
+
+liczba=int(input('podaj liczbę w systemie dziesiątkowym:'))
+wynik=dziesietny_na_binarny(liczba)
+print(f'liczba {liczba} w systemie binarnym to: {wynik}')
