@@ -1,0 +1,6 @@
+number = int(input('Podaj liczbę w systemie dziesiętnym: '))
+
+if number == 0:
+  print(0)
+else:
+  print(bin(number)[2:])
