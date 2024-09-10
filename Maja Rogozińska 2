@@ -1,0 +1,10 @@
+number = input('Podaj liczbę w systemie dziesiętnym')
+
+try:
+  int_value = int(number)
+  binary = bin(int_value)
+
+  print('Podana liczba wynosi', binary, 'w systemie dwójkowym')
+
+except ValueError:
+  print('Nie jestem w stanie przekształcić tej wartości.')
